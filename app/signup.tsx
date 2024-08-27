@@ -13,32 +13,48 @@ export default function SignUpView() {
   return (
     <View style={styles.container}>
       <TextInput
-        label="Name"
+        label="Username"
         mode='outlined'
         style={{
-          marginBottom: 20
+          marginBottom: 20,
         }}
+        outlineStyle={{
+          borderRadius: 20, 
+        }}
+        cursorColor='purple'
+        textColor='purple'
       />
       <TextInput
         label="Email"
         mode='outlined'
         style={{
-          marginBottom: 20
+          marginBottom: 20,
         }}
+        outlineStyle={{
+          borderRadius: 20, 
+        }}
+        cursorColor='purple'
+        textColor='purple'
       />
       <TextInput
-        label="password"
+        label="Password"
         mode='outlined'
         style={{
-          marginBottom: 20
+          marginBottom: 20,
         }}
+        outlineStyle={{
+          borderRadius: 20, 
+        }}
+        cursorColor='purple'
+        textColor='purple'
+        secureTextEntry={true}
       />
-      <Button icon="login" mode="contained" onPress={() => console.log('Pressed')} style={{
+      <Button icon="arrow-up-bold-circle" mode="contained-tonal" onPress={() => console.log("SignUp Button Pressed")} style={{
           marginBottom: 20
         }}>
-        SignUp
+        Sign Up
       </Button>
-      <Button icon="login-variant" mode="text" onPress={() => navigate("/login")} style={{
+      <Button icon="home-variant" mode="contained-tonal" onPress={() => navigate("/")} style={{
           marginBottom: 20
         }}>
         Login

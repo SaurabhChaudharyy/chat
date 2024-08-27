@@ -11,25 +11,36 @@ export default function LoginView() {
   return (
     <View style={styles.container}>
       <TextInput
-        label="Email"
+        label="Username"
         mode='outlined'
         style={{
-          marginBottom: 20
+          marginBottom: 20,
         }}
+        outlineStyle={{
+          borderRadius: 20, 
+        }}
+        cursorColor='purple'
+        textColor='purple'
       />
       <TextInput
-        label="password"
+        label="Password"
         mode='outlined'
         style={{
-          marginBottom: 20
+          marginBottom: 20,
         }}
+        outlineStyle={{
+          borderRadius: 20, 
+        }}
+        cursorColor='purple'
+        textColor='purple'
+        secureTextEntry={true}
       />
-      <Button icon="login" mode="contained" onPress={() => console.log('Pressed')} style={{
+      <Button icon="home-variant" mode="contained-tonal" onPress={() => console.log('Login Button Pressed')} style={{
           marginBottom: 20
         }}>
         Login
       </Button>
-      <Button icon="login-variant" mode="text" onPress={() => navigate("/signup")} style={{
+      <Button icon="arrow-up-bold-circle" mode="contained-tonal" onPress={() => navigate("/signup")} style={{
           marginBottom: 20
         }}>
         Sign Up
